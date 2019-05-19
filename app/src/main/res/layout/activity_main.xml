@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerPrincipal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lightGray"
+    tools:context="com.example.vinic.lablivre.MainActivity">
+
+    <android.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:title="@string/lablivre"
+        android:titleTextColor="@color/white">
+
+        <Button
+            android:id="@+id/btnOpenFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="right|top"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10px"
+            android:background="@color/colorPrimaryDark"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="@string/filtrar"
+            android:textColor="@color/white" />
+
+    </android.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/listViewLabs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/filterBlock"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="300dp"
+        android:animateLayoutChanges="true"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/filterList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp">
+
+            <Switch
+                android:id="@+id/freeLabsOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:text="@string/somente_laborat_rios_livres" />
+
+            <TextView
+                android:id="@+id/blockTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/freeLabsOnly"
+                android:layout_marginTop="10dp"
+                android:text="@string/blocos"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:layout_marginTop="5dp"
+                android:id="@id/check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/blockTitle"
+                android:text="@string/a2" />
+
+            <CheckBox
+                android:layout_marginTop="5dp"
+                android:id="@id/check2"
+                android:layout_below="@id/blockTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/check1"
+                android:text="@string/b6" />
+
+            <CheckBox
+                android:layout_marginTop="5dp"
+                android:id="@id/check3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/blockTitle"
+                android:layout_toRightOf="@id/check2"
+                android:text="@string/b7" />
+
+            <CheckBox
+                android:layout_marginTop="5dp"
+                android:id="@id/check4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/check3"
+                android:layout_below="@id/blockTitle"
+                android:text="@string/b8" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filterList"
+            android:layout_marginTop="-35dp"
+            android:titleTextColor="@color/colorPrimaryDark">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left|bottom"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@color/md_blue_200"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/limpar_filtros"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnFilter"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|bottom"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/filtrar"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

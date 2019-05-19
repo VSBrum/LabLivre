@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="check1" type="id">check1</item>
+    <item name="check2" type="id">check2</item>
+    <item name="check3" type="id">check3</item>
+    <item name="check4" type="id">check4</item>
+    <item name="check5" type="id">check5</item>
+    <item name="check6" type="id">check6</item>
+    <item name="check7" type="id">check7</item>
+    <item name="check8" type="id">check8</item>
+    <item name="check9" type="id">check9</item>
+    <item name="check10" type="id">check10</item>
+</resources>

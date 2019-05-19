@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LabLivre</string>
+    <string name="button">BUTTON</string>
+    <string name="filtrar">Filtrar</string>
+    <string name="voltar">Voltar</string>
+    <string name="limpar_filtros">Limpar filtros</string>
+    <string name="somente_laborat_rios_livres">Laboratórios livres</string>
+    <string name="blocos">Blocos</string>
+    <string name="a2">A2</string>
+    <string name="b6">B6</string>
+    <string name="b7">B7</string>
+    <string name="b8">B8</string>
+    <string name="lablivre">LabLivre</string>
+    <string name="teste">Teste</string>
+    <string name="li_01">LI-01</string>
+</resources>
